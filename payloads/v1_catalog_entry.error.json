@@ -1,0 +1,23 @@
+{
+  "name": "A much better name",
+  "definition_format": "string",
+  "dataContractTypeId": "jimdelete",
+  "categoryId":  "dataCategory1",
+  "dataType": "FILE",
+  "description": "this is an example of a data contract type (meta data on a data set)",
+  "ownership": {
+    "ownershipType": "SHARED",
+    "revocation": {
+      "revocationTime": "string",
+      "refundPolicy": "string"
+    },
+    "ownershipVerificationMethod": {
+      "attributeName": "string",
+      "hash": {
+        "method": "md5",
+        "value": "string"
+      }
+    }
+  },
+  "provider": "faisal.mohammad@lge.com"
+}

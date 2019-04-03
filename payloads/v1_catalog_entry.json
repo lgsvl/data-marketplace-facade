@@ -1,0 +1,29 @@
+{
+  "name": "A much better name",
+  "definition_format": "string",
+  "id": "jimdelete",
+  "categoryId":  "dataCategory1",
+  "dataType": "STREAM",
+  "price": {
+    "definition_format": "JSON",
+    "amount": 10,
+    "currency": "USD"
+  },
+  "description": "this is an example of a data contract type (meta data on a data set)",
+  "ownership": {
+    "ownershipType": "SHARED",
+    "revocation": {
+      "revocationTime": "string",
+      "refundPolicy": "string"
+    },
+    "ownershipVerificationMethod": {
+      "attributeName": "string",
+      "hash": {
+        "method": "md5",
+        "value": "string"
+      }
+    }
+  },
+  "extras": {},
+  "provider": "faisal.mohammad@lge.com"
+}
