@@ -1,0 +1,45 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+# GET     /                           controllers.HomeController.index
+
+GET     /api/v1/listCatalogEntries                  controllers.FacadeController.listCatalogEntries
+POST    /api/v1/addCatalogEntry                     controllers.FacadeController.addCatalogEntry
+POST    /api/v1/removeCatalogEntry                  controllers.FacadeController.removeCatalogEntry(id)
+POST    /api/v1/updateCatalogEntry                  controllers.FacadeController.updateCatalogEntry(id)
+GET     /api/v1/lookupCatalogEntry                  controllers.FacadeController.lookupCatalogEntry(id)
+GET     /api/v1/lookupCatalogEntriesByCategory      controllers.FacadeController.lookupCatalogEntriesByCategory(id)
+GET     /api/v1/lookupCatalogEntriesByProvider      controllers.FacadeController.lookupCatalogEntriesByProvider(id)
+GET     /api/v1/lookupPopularCatalogEntries         controllers.FacadeController.lookupPopularCatalogEntries(size)
+GET     /api/v1/lookupRecommendedCatalogEntry       controllers.FacadeController.lookupRecommendedCatalogEntry
+
+
+GET     /api/v1/listCategoryEntries             controllers.FacadeController.listCategoryEntries
+POST    /api/v1/addCategoryEntry                controllers.FacadeController.addCategoryEntry
+POST    /api/v1/removeCategoryEntry             controllers.FacadeController.removeCategoryEntry(id)
+POST    /api/v1/updateCategoryEntry             controllers.FacadeController.updateCategoryEntry(id)
+GET     /api/v1/lookupCategoryEntry             controllers.FacadeController.lookupCategoryEntry(id)
+GET     /api/v1/lookupPopularCategories         controllers.FacadeController.lookupPopularCategories(size: Long)
+GET     /api/v1/lookupCategoriesWithPagination  controllers.FacadeController.lookupCategoriesWithPagination(pageSize: Long, bookmark: Option[String])
+
+
+POST    /api/v1/addDataContractEntry                                    controllers.FacadeController.addDataContractProposal
+GET     /api/v1/lookupBusinessDataSetsPurchasedDownloaded               controllers.FacadeController.lookupBusinessDataSetsPurchasedDownloaded(id, today)
+GET     /api/v1/lookupBusinessDataSetsPurchasedNotUploaded              controllers.FacadeController.lookupBusinessDataSetsPurchasedNotUploaded(id)
+GET     /api/v1/lookupBusinessDataSetsPurchasedUploadedNotDownloaded    controllers.FacadeController.lookupBusinessDataSetsPurchasedUploadedNotDownloaded(id, today)
+GET     /api/v1/lookupBusinessDataSetsSoldAndDownloaded                 controllers.FacadeController.lookupBusinessDataSetsSoldAndDownloaded(id, today)
+GET     /api/v1/lookupBusinessDataSetsSoldShippedNotDownloaded          controllers.FacadeController.lookupBusinessDataSetsSoldShippedNotDownloaded(id, today)
+GET     /api/v1/lookupBusinessDataSetsByProvider                        controllers.FacadeController.lookupBusinessDataSetsByProvider(id)
+GET     /api/v1/lookupBusinessDataSetsByConsumer                        controllers.FacadeController.lookupBusinessDataSetsByConsumer(id)
+GET     /api/v1/lookupBusinessDataSetsToUpload                          controllers.FacadeController.lookupBusinessDataSetsToUpload(id)
+GET     /api/v1/lookupNumberOfBusinessDataSetsToUpload                  controllers.FacadeController.lookupNumberOfBusinessDataSetsToUpload(id)
+GET     /api/v1/lookupBusinessDataSetsToUploadByCatalogEntry            controllers.FacadeController.lookupBusinessDataSetsToUploadByCatalogEntry(id)
+GET     /api/v1/lookupBusinessDataSetsByCatalogEntry                    controllers.FacadeController.lookupBusinessDataSetsByCatalogEntry(id)
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+# GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

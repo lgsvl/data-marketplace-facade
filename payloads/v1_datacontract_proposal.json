@@ -1,0 +1,8 @@
+{
+  "$class": "com.lge.svl.datamarketplace.contract.SubmitDataContractProposal",
+  "dataContractType": "538064f2-dc3d-44b2-97dd-233020cfef32",
+  "consumer": "faisal.mohammad@lge.com",
+  "dataContractId": "jim9",
+  "dataContractTimestamp": "2018-10-10T23:18:05.405Z",
+  "extras": {}
+}
