@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: data-marketplace-facade
-        image: lgsvl/data-marketplace-facade:ci
+        image: lgsvlfx/data-marketplace-facade:ci
         imagePullPolicy: Always
         ports:
         - containerPort: 9000
