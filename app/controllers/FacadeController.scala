@@ -1,3 +1,8 @@
+//
+// Copyright (c) 2019 LG Electronics Inc.
+// SPDX-License-Identifier: Apache-2.0
+//
+
 package controllers
 
 import java.net.URLEncoder
